@@ -16,3 +16,5 @@
 ## Recording Sessions
 
 [Day 1](https://youtu.be/-eTayQ6_eKs)
+
+[Day 2](https://youtu.be/jf236qZxIa8)
