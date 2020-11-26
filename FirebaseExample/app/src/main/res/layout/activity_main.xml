@@ -30,11 +30,31 @@
         android:id="@+id/pass"
         android:layout_marginTop="15dp"
         android:inputType="textPassword"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password ?"
+        android:onClick="reset"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:gravity="end"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"
         android:onClick="login"
         android:layout_marginTop="15dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:onClick="register"
+        android:layout_marginTop="15dp"/>
+ <Button
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="Google Sign in"
+     android:onClick="gsign"
+     android:layout_marginTop="15dp"/>
 
 </LinearLayout>
