@@ -18,7 +18,7 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         tv = findViewById(R.id.tv);
         auth = FirebaseAuth.getInstance();
-        tv.setText("Welcome "+auth.getCurrentUser().getEmail());
+        tv.setText("Welcome "+auth.getCurrentUser().getPhoneNumber());
     }
 
     public void signout(View view) {
