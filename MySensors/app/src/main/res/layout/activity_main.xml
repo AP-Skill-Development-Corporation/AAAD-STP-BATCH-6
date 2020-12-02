@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@color/teal_200"
+    android:id="@+id/llayout"
+    tools:context=".MainActivity">
+   <Switch
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/ssensor"
+       android:textSize="30sp"
+       android:text="Shake Sensor"/>
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lsensor"
+        android:textSize="30sp"
+        android:text="Light Sensor"
+        android:layout_marginTop="15dp"/>
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tsensor"
+        android:textSize="30sp"
+        android:text="Touch Sensor"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Sensor Detection"
+        android:id="@+id/sd"
+        android:textSize="30sp"/>
+
+</LinearLayout>
