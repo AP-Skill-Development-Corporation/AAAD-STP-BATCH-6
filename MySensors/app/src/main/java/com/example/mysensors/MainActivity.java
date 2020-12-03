@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     Switch s1,s2,s3;
     TextView tv;
     SensorManager manager;
-    Sensor sensor;
+    Sensor sensor,acsensor;
     LinearLayout layout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,9 +33,14 @@ public class MainActivity extends AppCompatActivity {
         s2 = findViewById(R.id.lsensor);
         s3 = findViewById(R.id.tsensor);
         tv = findViewById(R.id.sd);
+
         manager = (SensorManager) getSystemService(SENSOR_SERVICE);
         sensor = manager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
+        acsensor = manager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+
         layout = findViewById(R.id.llayout);
+
+        /*This code is with 3party dependencies*/
         /*Initialise Sensey*/
         Sensey.getInstance().init(MainActivity.this);
 
@@ -138,6 +143,8 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        /*Third party dependency code ends here*/
+
         /*Proxmity Sensor*/
         SensorEventListener plistener = new SensorEventListener() {
             @Override
